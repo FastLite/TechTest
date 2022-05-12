@@ -10,6 +10,8 @@ public class fish : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Quaternion rotation = Quaternion.LookRotation(FindObjectOfType<Spawner>().transform.position, Vector3.up);
+        transform.rotation = rotation;
         if (transform.position.x>30)
         {
             transform.DOMoveX(-40, 40);

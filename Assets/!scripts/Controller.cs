@@ -15,6 +15,7 @@ public class Controller : MonoBehaviour
     private SpriteRenderer shark;
     private int targetIndex;
     private int score;
+    [SerializeField]
     private AudioSource src;
      
 
